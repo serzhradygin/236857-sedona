@@ -5,81 +5,71 @@
 	<title>Отели</title>
 </head>
 <body>
+
 	<div class="container">
 		<header class="main_header">
 			<div class="logo">
 				<a href="index.html">
-					<figure>
-						<img src="img/logo.psd" width="138px" height="70px" alt="sedona">
-					</figure>
+					<img src="img/logo.psd" width="138" height="70" alt="sedona">
 				</a>	
 			</div>
 			<nav class="main_nav">
 				<ul>
-					<li class="main_nav_info main_nav_item"><a href="#">ИНФОРМАЦИЯ</a></li>														<li class="main_nav_photo main_nav_item"><a href="#">ФОТО И ВИДЕО</a></li>
-					<li class="main_nav_map main_nav_item"><a href="#">КАРТА ШТАТА</a></li>
-					<li class="main_nav_hotels main_nav_item"><a href="#">ГОСТИНИЦЫ</a></li>
+					<li class="main_nav_info main_nav_item"><a href="#">Информация</a></li>														<li class="main_nav_photo main_nav_item"><a href="#">Фото и видео</a></li>
+					<li class="main_nav_map main_nav_item"><a href="#">Карта штата</a></li>
+					<li class="main_nav_hotels main_nav_item"><a href="#">Гостиницы</a></li>
 				</ul>
 			</nav>
-		</header>		
+		</header>
+
 		<main class="main_content_hotels">
 			<div class="hotel_selection">
-			<!-- С range возникли трудности... не показывает значения output (хотел показать этот элемент в виде сдовенных значений форм input и output, но видимо что то пошло не так:)) -->
-				<form class="form_filter" method="post" action="#" oninput="priceoutput.value=pricecount.value" oninput="priceoutput2.value=pricecount2.value">
+				<form class="form_filter" method="post" action="#">
+
 					<div class="filtres">
-						<h3 class="filter_title">ИНФРАСТРУКТУРА:</h3>
+						<h3 class="filter_title">Инфраструктура:</h3>
 						<div class="filter">	
-							<label for="filter_pool">БАССЕЙН</label>
+							<label for="filter_pool">Бассейн</label>
 							<input type="checkbox" name="option_infrs" id="filter_pool" checked>
 						</div>
 						<div class="filter">	
-							<label for="filter_parking">ПАРКОВКА</label>
+							<label for="filter_parking">Парковка</label>
 							<input type="checkbox" name="option_infrs" id="filter_parking">
 						</div>
 						<div class="filter">	
-							<label for="filter_wi-fi">WI-FI</label>
+							<label for="filter_wi-fi">wi-fi</label>
 							<input type="checkbox" name="option_infrs" id="filter_wi-fi">
 						</div>
 					</div>
+
 					<div class="filtres">
-						<h3 class="filter_title">ТИП ЖИЛЬЯ:</h3>
+						<h3 class="filter_title">Тип жилья:</h3>
 						<div class="filter">	
-							<label for="filter_hotel">ГОСТИНИЦА</label>
+							<label for="filter_hotel">Гостиница</label>
 							<input type="checkbox" name="option_house" id="filter_hotel" checked>
 						</div>
 						<div class="filter">	
-							<label for="filter_motel">МОТЕЛЬ</label>
+							<label for="filter_motel">Мотель</label>
 							<input type="checkbox" name="option_house" id="filter_motel" checked>
 						</div>
 						<div class="filter">	
-							<label for="filter_apartaments">АПАРТАМЕНТЫ</label>
+							<label for="filter_apartaments">Апартаменты</label>
 							<input type="checkbox" name="option_house" id="filter_apartaments" checked>
 						</div>
 					</div>
+
 					<div class="range_filters">
-						<h3 class="range_filters_title">СТОИМОСТЬ В СУТКИ (Р):</h3>
-						<div class="output"></div>
-							<div class="price_controls">
-								<output name="priceoutput" width="90px"></output>
-							</div>
-							<div class="price_controls">
-								<output name="priceoutput2"></output>
-							</div>
-						</div>
-						<div class="range">
-							<div>	
-								<input id="priceoutput" type="range" name="priceoutput" min="0" max="2500" step="1">
-							</div>	
-							<div>	
-								<input id="priceoutput2" type="range" name="priceoutput2" min="2501" max="5000" step="1">
-							</div>	
+						<h3 class="range_filters_title">Стоимость сутки (Р):</h3>
+						<div class="range_field">
+							
 						</div>
 						<div class="find_btn">
-							<button class="find" type="submit">ПОКАЗАТЬ</button>
+							<button class="find" type="submit">Показать</button>
 						</div>	
 					</div>
 				</form>
 			</div>
+
 			<section class="serch_sortby">
         		<div class="sort">
           			<h3 class="found">Найдено: 3</h3>
@@ -101,12 +91,11 @@
 			        <a class="icon-down-dir active" href="#" title="по убыванию"></a>
 			    </div>
 		    </section>
+
 			<section class="found_items">
 				<div class="item">
 					<div class="item_img">
-						<figure>
 							<img src="img/content.jpg" width="135" height="90" alt="Amara Resort &amp; Spa">
-						</figure>
 					</div>
 					<div class="item_info">
             			<a class="item_title" href="#">Amara Resort & Spa</a>
@@ -120,16 +109,21 @@
             			</div>
             		</div>
             		<div class="item_rating">
-            			<div class="rating_stars"></div>
-            			<div class="rating_index">РЕЙТИНГ: 8,5</div>
+            			<div class="rating_stars">
+            				<ul>
+            					<li class="star"></li>
+            					<li class="star"></li>
+            					<li class="star"></li>
+            					<li class="star"></li>     
+            				</ul>
+            			</div>
+            			<div class="rating_index">Рейтинг: 8,5</div>
             		</div>	
 				</div>
 
 				<div class="item">
 					<div class="item_img">
-						<figure>
-							<img src="img/content.jpg" width="135" height="90" alt="Desert Quail INN">
-						</figure>
+						<img src="img/content.jpg" width="135" height="90" alt="Desert Quail INN">
 					</div>
 					<div class="item_info">
             			<a class="item_title" href="#">Desert Quail INN</a>
@@ -143,16 +137,19 @@
             			</div>
             		</div>
             		<div class="item_rating">
-            			<div class="rating_stars"></div>
-            			<div class="rating_index">РЕЙТИНГ: 8,9</div>
+            			<div class="rating_stars">
+            				<ul>
+            					<li class="star"></li>
+            					<li class="star"></li>  
+            				</ul>
+            			</div>
+            			<div class="rating_index">Рейтинг: 8,9</div>
             		</div>	
 				</div>
 
 				<div class="item">
 					<div class="item_img">
-						<figure>
-							<img src="img/content.jpg" width="135" height="90" alt="Villas at poco Diablo">
-						</figure>
+						<img src="img/content.jpg" width="135" height="90" alt="Villas at poco Diablo">
 					</div>
 					<div class="item_info">
             			<a class="item_title" href="#">Villas at poco Diablo</a>
@@ -166,27 +163,31 @@
             			</div>
             		</div>
             		<div class="item_rating">
-            			<div class="rating_stars"></div>
-            			<div class="rating_index">РЕЙТИНГ: 9,2</div>
+            			<div class="rating_stars">
+            				<ul>
+            					<li class="star"></li>
+            					<li class="star"></li>
+            					<li class="star"></li>    
+            				</ul>
+            			</div>
+            			<div class="rating_index">Рейтинг: 9,2</div>
             		</div>	
 				</div>
 			</section>
 		</main>
 		<footer class="main_footer">
 			<div class="main_footer_hashtag">
-				<b>#VISITSEDONA</b>
+				<b>#visitsedona</b>
 			</div>
 			<div class="main_footer_social">
-				<a href="#" class="social_btn">TWITTER</a>
-				<a href="#" class="social_btn">FACEBOOK</a>
-				<a href="#" class="social_btn">YOUTUBE</a>
+				<a href="#" class="social_btn social_twitter">twitter</a>
+				<a href="#" class="social_btn social_facebook">facebook</a>
+				<a href="#" class="social_btn social_youtube">youtube</a>
 			</div>
 			<div class="main_footer_copyright">
 				<a href="htmlacademy.ru" class="copyright_icon">
-				WEBSITE BY
-					<figure>
-						<img src="img/copyright_icon.psd" alt="копирайт" width="50px" height="50px">
-					</figure>
+					<span>website by</span>
+					<img src="img/copyright_icon.psd" alt="копирайт" width="50" height="50">
 				</a>
 			</div>
 		</footer>
