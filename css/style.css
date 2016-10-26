@@ -2,7 +2,7 @@ body {
 	font-size: 14px;
 	line-height: 21px;
 	color: black;
-	font-weight: 0;
+	font-weight: normal;
 	font-family: 'PTSans', sans-serif;
 	text-transform: uppercase;
 	background: grey;
