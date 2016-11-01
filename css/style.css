@@ -4,7 +4,7 @@ body {
 	line-height: 21px;
 	color: black;
 	font-weight: normal;
-	font-family: 'PT Sans', sans-serif;
+	font-family: "PT Sans", sans-serif;
 	text-transform: uppercase;
 	background: #f2f2f2;
 }
@@ -14,7 +14,7 @@ h1,h4 {
 	line-height: 26px;
 	color: black;
 	font-weight: bold;
-	font-family: 'PT Sans', sans-serif;
+	font-family: "PT Sans", sans-serif;
 }
 
 h2 {
@@ -22,7 +22,7 @@ h2 {
 	line-height: 21px;
 	color: black;
 	font-weight: bold;
-	font-family: 'PT Sans', sans-serif;
+	font-family: "PT Sans", sans-serif;
 }
 
 h3 {
@@ -30,7 +30,7 @@ h3 {
 	line-height: 24px;
 	color: black;
 	font-weight: bold;
-	font-family: 'PT Sans', sans-serif;
+	font-family: "PT Sans", sans-serif;
 }
 /*fonts end*/
 
@@ -143,7 +143,7 @@ h3 {
 
 /*intro end*/
 
-/*main begin*/
+/*main_index begin*/
 
 /*.description begin*/
 
@@ -373,7 +373,225 @@ iframe {
 
 /*map end*/
 
-/*main end*/
+/*main_index end*/
+
+/*////////////////////////////////////////////////////////*/
+
+/*main_hotels begin*/
+
+/*hotel_selection begin*/
+.hotel_selection {
+	min-height: 156px;
+	padding: 28px 6%;
+	background: #81b3d0 url(../img/bground/hotel_selection_background.jpg);
+	color: #ffffff;
+}
+
+.hotel_selection h4 {
+	margin-top: 0px;
+	font-size: 16px;
+	line-height: 21px;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.filters {
+	width: 240px;
+	float: left;
+}
+
+.filters:nth-child(2) {
+	margin-left: 20px;
+}
+
+.filters label {
+	margin-left: 19px;
+}
+
+.filter {
+	margin-top: 25px;
+}
+
+.range_filters {
+	float: right;
+	width: 328px;
+}
+
+.range_filters_title {
+	margin-bottom: 9px;
+}
+
+.price_controls {
+	width: 314px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	padding: 4px 0px;
+	font-size: 0px;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+}
+
+.price_controls input {
+	width: 50%;
+	box-sizing: border-box;
+	background: none;
+	border: none;
+	text-align: center;
+	font-size: 16px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+.price_controls input:nth-child(1) {
+	border-right: 1px solid #ffffff;
+}
+
+.price_controls input:nth-child(2) {
+	border-left: 1px solid #ffffff;
+}
+.range {
+	margin-bottom: 32px;
+}
+
+.find_btn {
+	width: 133px;
+	margin: 0 auto;
+	border: 2px solid #fff;
+	padding: 5px 35px;
+	border-radius: 2px;
+	text-align: center;
+}
+
+.find_btn .find {
+	border: none;
+	background: none;
+	font-size: 16px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+/*hotel_selection end*/
+
+/*searh_sortby begin*/
+
+.search_sortby {
+	min-height: 21px;
+	padding: 30px 6% 29px 6%;
+	background: #fff;
+	border-bottom: 1px solid #e5e5e5; 
+}
+
+.sort {
+	float: left;
+}
+
+.sort h4, .sort_title, .sort_by_item, .sort_by  {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+}
+
+.sort_title, .sort_by_item {
+	font-family: "PT Sans", sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.sort_title {
+	margin-left: 50px;
+}
+
+.sort_by_item:nth-child(1) {
+	margin-left: 40px;
+}
+
+.sort_by_item:nth-child(2), .sort_by_item:nth-child(3) {
+	margin-left: 33px;
+	border-bottom: 1px dotted #e5e5e5;
+}
+
+.sort_by_item a {
+	text-decoration: none;
+}
+.switch {
+	float: right;
+}
+/*searh_sortby end*/
+
+/*found_items begins*/
+
+.found_items .item {
+	min-height: 0px;
+	padding: 28px 6%;
+	border-bottom: 1px solid #e5e5e5; 
+}
+
+.item_img {
+	float: left;
+	margin-right: 30px;
+}
+
+.item_info {
+	float: left;
+}
+
+.item_info .item_title {
+	display: block;
+	margin-bottom: 13px;
+	font-family: "PT Sans", sans-serif; 
+	text-decoration: none;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: black;
+}
+
+.item_description span {
+	display: inline-block;
+	margin-bottom: 15px;
+	margin-right: 40px;
+}
+
+.item_rating {
+	float: right;
+}
+
+.rating_stars .star {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.rating_index {
+	display: inline-block;
+	vertical-align: bottom;
+	margin-top: 25px;
+}
+
+.item_btn > a {
+	display: inline-block;
+	margin-right: 6px;
+	font-family: "PT Sans", sans-serif; 
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.item_btn_more {
+	padding: 4px 17px;
+	background: #81b3d2;
+}
+
+.item_btn_book {
+	padding: 4px 17px;
+	background: #766357
+}
+/*found_items end*/
+
+/*main_hotels end*/
 
 /*footer begin*/
 
@@ -410,4 +628,4 @@ iframe {
 	vertical-align: middle;
 }
 
-/*footer end
+/*footer end*/
