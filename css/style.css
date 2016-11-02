@@ -283,6 +283,7 @@ h3 {
 
 .entry_field {
 	margin-bottom: 29px;
+	font-size: 0px;
 }
 
 .date_field {
@@ -312,11 +313,13 @@ h3 {
 .human_numb_form:nth-child(1) {
 	float: left;
 	margin-bottom: 54px;
+	font-size: 0px;
 }
 
 .human_numb_form:nth-child(2) {
 	float: right;
-	margin-bottom: 54px
+	margin-bottom: 54px;
+	font-size: 0px;
 }
 
 .human_numb_form .field_title {
@@ -484,6 +487,7 @@ iframe {
 
 .sort {
 	float: left;
+	font-size: 0px;
 }
 
 .sort h4, .sort_title, .sort_by_item, .sort_by  {
@@ -548,6 +552,10 @@ iframe {
 	color: black;
 }
 
+.item_description {
+	font-size: 0px;
+}
+
 .item_description span {
 	display: inline-block;
 	margin-bottom: 15px;
@@ -558,15 +566,21 @@ iframe {
 	float: right;
 }
 
+.rating_stars {
+	font-size: 0px;
+}
+
 .rating_stars .star {
 	display: inline-block;
 	vertical-align: top;
 }
 
 .rating_index {
-	display: inline-block;
-	vertical-align: bottom;
 	margin-top: 25px;
+}
+
+.item_btn {
+	font-size: 0px;
 }
 
 .item_btn > a {
