@@ -83,6 +83,7 @@ h3 {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
+	color: #000;
 }
 
 .main_nav_item {
@@ -136,7 +137,7 @@ h3 {
 .intro_img {
 	margin-top: 75px;
 	width: 458px;
-	height: 352;
+	height: 352px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -153,7 +154,7 @@ h3 {
 }
 
 .description p {
-	margin-bottom: 55px;
+	margin-bottom: 50px;
 	text-align: center;
 }
 
@@ -162,7 +163,8 @@ h3 {
 /*.features_row1 begin*/
 
 
-.features_row1 .features_item, .features_row3 .features_item {
+.features_row1 .features_item, 
+.features_row3 .features_item {
 	background: #81b3d2;
 	color: white;
 }
@@ -174,19 +176,25 @@ h3 {
 	text-align: center;
 }
 
-.features_row1 .features_item h2, .features_row3 .features_item h2, .features_row4 .features_item h2 {
+.features_row1 .features_item h2,
+.features_row3 .features_item h2,
+.features_row4 .features_item h2 {
 	margin-top: 54px;
-	margin-bottom: 28px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
 	color: white;
 }
 
 .features_numb {
-	margin-bottom: 28px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .features_desc {
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .features_row1 .features_img {
@@ -234,6 +242,7 @@ h3 {
 }
 
 .features_row4 .features_item h2 {
+	margin-top: 45px;
 	margin-left: 140px;
 	margin-right: 140px;
 	color: inherit;
@@ -270,6 +279,11 @@ h3 {
 	background: #766357;
 	color: white;
 	text-decoration: none;
+	font-family: "PT Sans", sans-serif;
+	font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    text-transform: uppercase;
 }
 
 .search_form {
@@ -287,14 +301,14 @@ h3 {
 }
 
 .date_field {
-	width: 287px;
-	padding-left: 10px;
+	width: 300px;
+	padding-left: 14px;
 	padding-right: 30px;
-	height: 38px;
+	height: 36px;
 	border: 0px;
 	background: #f2f2f2;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 26px;
     text-transform: uppercase;
 }
@@ -302,7 +316,6 @@ h3 {
 .field_title {
 	display: inline-block;
 	width: 109px;
-	padding-right: 16px;
 	vertical-align: middle;
 	text-align: left;
 	font-size: 14px;
@@ -312,14 +325,18 @@ h3 {
 
 .human_numb_form:nth-child(1) {
 	float: left;
-	margin-bottom: 54px;
+	margin-bottom: 26px;
 	font-size: 0px;
 }
 
 .human_numb_form:nth-child(2) {
 	float: right;
-	margin-bottom: 54px;
+	margin-bottom: 26px;
 	font-size: 0px;
+}
+
+.human_numb_form:nth-child(2) .field_title {
+margin-right: 15px;
 }
 
 .human_numb_form .field_title {
@@ -359,10 +376,13 @@ h3 {
 
 .search_btn {
 	display: block;
-	padding: 15px 195px;
+	padding: 16px 195px;
 	background: #81b3d2;
 	text-decoration: none;
 	color: #ffffff;
+	font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
 }
 /*reserv_block end*/
 
@@ -560,6 +580,10 @@ iframe {
 	display: inline-block;
 	margin-bottom: 15px;
 	margin-right: 40px;
+	font-size: 14px;
+	line-height: 21px;
+	color: black;
+
 }
 
 .item_rating {
