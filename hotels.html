@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Отели</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
@@ -17,7 +18,7 @@
 			</div>
 			<nav class="main_nav">
 				<ul>
-					<li class="main_nav_info main_nav_item"><a href="index.html">Информация</a></li>	
+					<li class="main_nav_info main_nav_item"><a href="#">Информация</a></li>	
 					<li class="main_nav_photo main_nav_item"><a href="#">Фото и видео</a></li>
 					<li class="main_nav_hotels main_nav_item"><a href="#">Гостиницы</a></li>
 					<li class="main_nav_map main_nav_item"><a href="#">Карта штата</a></li>
@@ -31,49 +32,65 @@
 
 					<div class="filters">
 						<h4 class="filter_title">Инфраструктура:</h4>
-						<div class="filter">	
-							<input type="checkbox" name="option_infrs" id="filter_pool" checked>
-							<label for="filter_pool">Бассейн</label>
-						</div>
-						<div class="filter">	
-							<input type="checkbox" name="option_infrs" id="filter_parking">
-							<label for="filter_parking">Парковка</label>
+						<div class="filter">
+							<label for="filter_pool">Бассейн	
+								<input class="filter_input" type="checkbox" name="option_infrs" id="filter_pool" checked>
+								<span class="filter_choose"></span>
+							</label>
 						</div>
 						<div class="filter">
-							<input type="checkbox" name="option_infrs" id="filter_wi-fi">	
-							<label for="filter_wi-fi">wi-fi</label>
+							<label for="filter_parking">Парковка
+								<input class="filter_input" type="checkbox" name="option_infrs" id="filter_parking">
+								<span class="filter_choose"></span>
+							</label>
+						</div>
+						<div class="filter">	
+							<label for="filter_wi-fi">wi-fi
+								<input class="filter_input" type="checkbox" name="option_infrs" id="filter_wi-fi">
+								<span class="filter_choose"></span>
+							</label>
 						</div>
 					</div>
 
 					<div class="filters">
 						<h4 class="filter_title">Тип жилья:</h4>
-						<div class="filter">
-							<input type="checkbox" name="option_house" id="filter_hotel" checked>	
-							<label for="filter_hotel">Гостиница</label>
+						<div class="filter">	
+							<label for="filter_hotel">Гостиница
+								<input class="filter_input" type="checkbox" name="option_house" id="filter_hotel" checked>
+								<span class="filter_choose"></span>
+							</label>
 						</div>
-						<div class="filter">
-							<input type="checkbox" name="option_house" id="filter_motel" checked>	
-							<label for="filter_motel">Мотель</label>
+						<div class="filter">	
+							<label for="filter_motel">Мотель
+								<input class="filter_input" type="checkbox" name="option_house" id="filter_motel" checked>
+								<span class="filter_choose"></span>
+							</label>
 						</div>
-						<div class="filter">
-							<input type="checkbox" name="option_house" id="filter_apartaments" checked>	
-							<label for="filter_apartaments">Апартаменты</label>
+						<div class="filter">	
+							<label for="filter_apartaments">Апартаменты
+								<input class="filter_input" type="checkbox" name="option_house" id="filter_apartaments" checked>
+								<span class="filter_choose"></span>
+							</label>
 						</div>
 					</div>
 
 					<div class="range_filters">
-						<h4 class="range_filters_title">Стоимость сутки (Р):</h4>
+						<h4 class="range_filters_title">Стоимость в сутки (Р):</h4>
 						<div class="price_controls">
 							<input class="min_price" name="min-price" type="text" value="ОТ 0">
 							<input class="max_price" name="max-price" type="text" value="ДО 3000">
 						</div>
 						<div class="range">
-							<div class="range_item range_item_left">
-								<a href=""></a>
-							</div>
-							<div class="range_item range_item_right">
-							    <a href=""></a>
-							</div>
+							<div class="scale">
+								<div class="bar">
+									<div class="range_item range_item_left">
+										<a href="#"></a>
+									</div>
+									<div class="range_item range_item_right">
+									    <a href="#"></a>
+									</div>
+								</div>	
+							</div>	
 						</div>
 						<div class="find_btn">
 							<button class="find" type="submit">Показать</button>
@@ -91,10 +108,10 @@
               				<a class="active" href="#">по цене</a>
             			</li>
             			<li class="sort_by_item">
-			              <a href="#">по типу</a>
+			              <a class="no_active" href="#">по типу</a>
 			            </li>
 			            <li class="sort_by_item">
-			              <a href="#">по рейтингу</a>
+			              <a class="no_active" href="#">по рейтингу</a>
 			            </li>
 			        </ul>
         		</div>
@@ -198,8 +215,7 @@
 			</div>
 			<div class="main_footer_copyright">
 				<a href="htmlacademy.ru" class="copyright_icon">
-					<span>website by</span>
-					<img src="img/copyright_icon.psd" alt="копирайт" width="50" height="50">
+					website by
 				</a>
 			</div>
 		</footer>
