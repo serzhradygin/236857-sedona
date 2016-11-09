@@ -109,7 +109,7 @@ h3 {
 .main_nav_map, .main_nav_hotels {
 	float: right;
 	text-align: right;
-	margin-left: 40px;
+	margin-left: 45px;
 }
 
 .logo {
@@ -178,12 +178,13 @@ h3 {
 .features_row3 .features_item {
 	background: #81b3d2;
 	color: white;
+	width: 34%;
 }
 
 .features_item {
 	float: left;
 	min-height: 256px;
-	width: 400px;
+	width: 34%;
 	text-align: center;
 }
 
@@ -211,11 +212,18 @@ h3 {
 .features_row1 .features_img {
 	float: right;
 	height: 256px;
+	width: 66%;
 }
 
 /*.features_row1 end*/
 
 /*.features_row2 begin*/
+.features_row2 .features_item:nth-child(1),
+.features_row2 .features_item:nth-child(3),
+.features_row4 .features_item:nth-child(1),
+.features_row4 .features_item:nth-child(3) {
+	width: 33%;
+} 
 
 .features_row2 > .features_item {
 	min-height: 185px;
@@ -272,6 +280,7 @@ h3 {
 .features_row3 .features_img {
 	float: left;
 	height: 256px;
+	width: 66%;
 }
 
 .features_row3 .features_item {
@@ -392,6 +401,10 @@ h3 {
     line-height: 26px;
 }
 
+.entry_field:not(:last-child) > .field_title {
+	margin: -5px -3px 0px 0px;
+}
+
 .human_number_form:nth-child(1) {
 	float: left;
 	margin-bottom: 26px;
@@ -446,6 +459,7 @@ h3 {
 	border: 0px;
 	background: #f2f2f2;
 	outline: 0;
+	cursor: pointer;
 }
 
 .child_number .number_btn:first-child,
@@ -454,7 +468,7 @@ h3 {
 }
 
 .child_number .number_btn:first-child:hover,
-.adult_numb .numb_btn:first-child:hover {
+.adult_number .number_btn:first-child:hover {
 	background: #f2f2f2 url(../img/sprit/spritesheet.png) no-repeat 0px -734px;
 }
 
@@ -602,6 +616,7 @@ iframe {
 	font-size: 14px;
 	line-height: 21px;
 	color: #ffffff;
+	outline: none;
 }
 
 .price_controls input:nth-child(1) {
@@ -755,7 +770,7 @@ iframe {
 	width: 0px;
 	height: 0px;
 	border-bottom: 10px solid #cccccc;
-	border-top: 10px solid #cccccc;
+	border-top: 10px solid #81b3d2;
 	border-right: 5px solid transparent;
 	border-left: 5px solid transparent;
 }
@@ -775,6 +790,7 @@ iframe {
 
 
 .icon_down_dir {
+	border-top: 10px solid #81b3d2;
 	border-bottom: 10px solid transparent;
 	left: 38px;
 	top: 9px;
@@ -937,7 +953,7 @@ iframe {
 	position: relative;
 	min-height: 50px; 
 	padding: 35px 0px 60px;
-	background: rgba(254,254,254,.9);
+	background: rgba(254,254,254,.7);
 }
 
 .main_footer_index {
