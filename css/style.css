@@ -39,7 +39,7 @@ h3 {
 
 /*animation begin*/
 
-@keyframes move {
+@keyframes move_form {
 	from {transform: translateY(-400px);
 	}
 	to {transform: translateY(0px);
@@ -64,7 +64,7 @@ h3 {
 .container {
 	position: relative;
 	margin: 0 auto;
-	width: 1200px;
+	max-width: 1200px;
 	background: #fff;
 	box-shadow: 0 0 15px 5px rgba(0,0,1,.2);
 }
@@ -130,7 +130,7 @@ h3 {
 .logo {
 	position: absolute;
 	left: 600px;
-	margin-left: -69px;
+	transform: translateX(-50%);
 	z-index: 1;
 }
 
@@ -144,6 +144,7 @@ h3 {
 	padding-top: 1px;
 	margin-bottom: 60px;
 	background: #5182ad url(../img/bground/background_header.jpg) 100% 0 no-repeat;
+	background-size: cover;
 }
 
 .main_content {
@@ -201,6 +202,7 @@ h3 {
 	background: #81b3d2;
 	color: white;
 	width: 34%;
+	max-height: 256px;
 }
 
 .features_item {
@@ -229,12 +231,14 @@ h3 {
 .features_description {
 	margin-left: 60px;
 	margin-right: 60px;
+	margin-bottom: 63px;
 }
 
 .features_row1 .features_img {
 	float: right;
 	height: 256px;
 	width: 66%;
+	background: #81b3d2;
 }
 
 .content_img {
@@ -383,8 +387,9 @@ h3 {
 	display: none;
 	height: 285px;
 	width: 460px;
-	top: 2170px;
-    left: 315px;
+	top: 77.8%;
+    left: 50%;
+	transform: translateX(-50%);
 	padding: 55px;
 	background: #ffffff;
 }
@@ -392,7 +397,7 @@ h3 {
 
 .search_form_show {
 	display: block;
-	animation-name: move;
+	animation-name: move_form;
 	animation-duration: 1s;
 	animation-timing-function: linear;
 }
@@ -550,6 +555,10 @@ h3 {
 /*reserv_block end*/
 
 /*.map begin*/
+
+.map {
+	position: relative;
+}
 
 iframe {
 	height: 593px;
