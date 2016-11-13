@@ -40,10 +40,18 @@ h3 {
 /*animation begin*/
 
 @keyframes move_form {
-	from {transform: translateY(-400px);
-	}
-	to {transform: translateY(0px);
-	}	
+	0% {
+    transform: translateY(-200px);
+}
+50% {
+    transform: translateY(50px);
+}
+75% {
+    transform: translateY(-5px);
+}
+100% {
+    transform: translateY(0);
+}
 }
 
 /*animation end*/
@@ -129,7 +137,7 @@ h3 {
 
 .logo {
 	position: absolute;
-	left: 600px;
+	left: 50%;
 	transform: translateX(-50%);
 	z-index: 1;
 }
@@ -352,6 +360,8 @@ h3 {
 .reserve_block {
 	text-align: center;
 	position: relative;
+	z-index: 50;
+	background-color: #fff;
 }
 
 .reserve_title {
@@ -389,7 +399,7 @@ h3 {
 	width: 460px;
 	top: 77.8%;
     left: 50%;
-	transform: translateX(-50%);
+	margin-left:-285px;
 	padding: 55px;
 	background: #ffffff;
 }
@@ -398,7 +408,7 @@ h3 {
 .search_form_show {
 	display: block;
 	animation-name: move_form;
-	animation-duration: 1s;
+	animation-duration: 800ms;
 	animation-timing-function: linear;
 }
 
