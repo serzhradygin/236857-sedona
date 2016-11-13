@@ -6,13 +6,14 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="js/script.js">
   </head>
   <body>
 		<div class="container">
 			<header class="main_header">
 				<div class="logo">		
 					<a href="index.html">
-						<img src="img/icon/logo.png" width="138" height="70" alt="sedona">
+						<img src="img/content/logo.png" width="138" height="70" alt="sedona">
 					</a>
 				</div>		
 				<nav class="main_nav">
@@ -41,7 +42,7 @@
 						<p class="features_description">Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
 					</div>
 					<div class="features_img">
-						<img src="img/content/content_features_row1.jpg" alt="" width="800" height="256">
+						<img class="content_img" src="img/content/content_features_row1.jpg" alt="" width="800" height="256">
 					</div>
 				</section>
 				<section class="features_row2 clearfix">
@@ -60,7 +61,7 @@
 				</section>
 				<section class="features_row3 clearfix">
 					<div class="features_img">
-						<img src="img/content/content_features_row3.jpg" alt="" width="800" height="256">
+						<img class="content_img" src="img/content/content_features_row3.jpg" alt="" width="800" height="256">
 					</div>
 					<div class="features_item">
 						<h2 class="features_title">Там есть<br> мост дьявола</h2>
@@ -93,39 +94,6 @@
 							<a class="search_push" href="#">Поиск гостиницы в Седоне</a>
 						</div>
 					</div>
-					<div class="search_form">
-						<form method="post" action="#">
-							<div class="entry_field">
-								<label class="field_title" for="date_arrive">Дата заезда:</label>
-								<input class="date_field" type="text" name="date_arrive" id="date_arrive" value="24 апреля 2016">
-							</div>
-							<div class="entry_field">
-								<label class="field_title" for="date_leave">Дата выезда:</label>
-								<input class="date_field" type="text" name="date_leave" id="date_leave" value="4 июля 2016">
-							</div>
-							<div class="entry_field clearfix">
-								<div class="human_number_form">
-									<label class="field_title" for="adult_number">Взрослые:</label>
-									<div class="adult_number">
-										<button class="number_btn"></button>
-										<input class="number_field" type="text" name="number" id="adult_number" value="2">
-										<button class="number_btn"></button>
-									</div>
-								</div>
-								<div class="human_number_form">	
-									<label class="field_title" for="child_number">Дети:</label>
-									<div class="child_number">
-										<button class="number_btn"></button>
-										<input class="number_field" type="text" name="number" id="child_number" value="0">
-										<button class="number_btn"></button>
-									</div>
-								</div>
-							</div>
-							<div class="search_btn_feild">
-								<a href="#" class="btn search_btn">Найти</a>
-							</div>
-						</form>
-					</div>
 				</section>
 				<section class="map">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180474150824!2d-111.83015810893012!3d34.8543734310146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1477498097750" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -146,6 +114,49 @@
 					</a>
 				</div>
 			</footer>
+			<div class="search_form">
+				<form method="post" action="#">
+					<div class="entry_field">
+						<label class="field_title" for="date_arrive">Дата заезда:</label>		<input class="date_field" type="text" name="date_arrive" id="date_arrive" value="24 апреля 2016">
+					</div>
+					<div class="entry_field">
+						<label class="field_title" for="date_leave">Дата выезда:</label>
+						<input class="date_field" type="text" name="date_leave" id="date_leave" value="4 июля 2016">
+					</div>
+					<div class="entry_field clearfix">
+						<div class="human_number_form">
+							<label class="field_title" for="adult_number">Взрослые:</label>
+							<div class="adult_number">
+								<button class="number_btn"></button>
+								<input class="number_field" type="text" name="number" id="adult_number" value="2">
+								<button class="number_btn"></button>
+							</div>
+						</div>
+						<div class="human_number_form">	
+							<label class="field_title" for="child_number">Дети:</label>
+							<div class="child_number">
+								<button class="number_btn"></button>
+								<input class="number_field" type="text" name="number" id="child_number" value="0">
+								<button class="number_btn"></button>
+							</div>
+						</div>
+					</div>
+					<div class="search_btn_feild">
+						<a href="#" class="btn search_btn">Найти</a>
+					</div>
+				</form>
+			</div>	
 		</div>
+
+		<script type="text/javascript">		
+			var link = document.querySelector(".search_push");
+			var popup = document.querySelector(".search_form");
+			
+
+			link.addEventListener("click", function(event) {
+        	event.preventDefault();
+        	popup.classList.toggle("search_form_show");
+      		});
+		</script>
   </body>
 </html>
