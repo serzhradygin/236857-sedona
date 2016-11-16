@@ -232,9 +232,8 @@ h3 {
 }
 
 .features_description {
-	margin-left: 60px;
-	margin-right: 60px;
-	margin-bottom: 52px;
+	margin-left: 15%;
+	margin-right: 15%;
 }
 
 .features_row1 .features_img {
@@ -333,8 +332,8 @@ h3 {
 
 .features_row4 .features_item_title {
 	margin-top: 48px;
-	margin-left: 140px;
-	margin-right: 140px;
+	margin-left: 30%;
+	margin-right: 30%;
 	color: inherit;
 }
 
