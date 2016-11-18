@@ -436,7 +436,7 @@ h3 {
 .entry_field {
 	position: relative;
 	margin-bottom: 29px;
-	font-size: 0px;
+	font-size: 0;
 }
 
 .date_field {
@@ -445,7 +445,7 @@ h3 {
 	padding-left: 14px;
 	padding-right: 30px;
 	margin-left: 5px;
-	border: 0px;
+	border: 0;
     font-size: 14px;
     font-weight: bold;
     line-height: 26px;
@@ -474,19 +474,19 @@ h3 {
 }
 
 .entry_field:not(:last-child) > .field_title {
-	margin: -5px -3px 0px 0px;
+	margin: -5px -3px 0 0;
 }
 
 .human_number_form:nth-child(1) {
 	float: left;
 	margin-bottom: 26px;
-	font-size: 0px;
+	font-size: 0;
 }
 
 .human_number_form:nth-child(2) {
 	float: right;
 	margin-bottom: 26px;
-	font-size: 0px;
+	font-size: 0;
 }
 
 .human_number_form:nth-child(2) .field_title {
@@ -502,7 +502,7 @@ h3 {
     width: 114px;
     height: 38px;
     vertical-align: middle;
-    font-size: 0px;
+    font-size: 0;
     background: #f2f2f2;
 }
 
@@ -514,7 +514,7 @@ h3 {
 	display: inline-block;
 	width: 38px;
 	height: 36px;
-	border: 0px;
+	border: 0;
 	background: #f2f2f2;
 	font-size: 14px;
 	line-height: 21px;
@@ -528,7 +528,7 @@ h3 {
 	display: inline-block;
 	width: 33px;
 	height: inherit;
-	border: 0px;
+	border: 0;
 	background: #f2f2f2;
 	outline: 0;
 	cursor: pointer;
@@ -611,7 +611,7 @@ iframe {
 }
 
 .hotel_selection h4 {
-	margin-top: 0px;
+	margin-top: 0;
 	font-size: 16px;
 	line-height: 21px;
 	color: #ffffff;
@@ -674,8 +674,8 @@ iframe {
 	width: 314px;
 	margin-left: 10px;
 	margin-bottom: 20px;
-	padding: 5px 0px;
-	font-size: 0px;
+	padding: 5px 0;
+	font-size: 0;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
 }
@@ -733,7 +733,7 @@ iframe {
 }
 
 .range_item_left {
-	left: 0px;
+	left: 0;
 }
 
 .range_item_right {
@@ -777,7 +777,7 @@ iframe {
 
 .sort {
 	float: left;
-	font-size: 0px;
+	font-size: 0;
 }
 
 .sort h4, 
@@ -844,7 +844,7 @@ iframe {
 	position: absolute;
 	display: inline-block;
 	width: 0px;
-	height: 0px;
+	height: 0;
 	border-bottom: 10px solid #cccccc;
 	border-top: 10px solid #81b3d2;
 	border-right: 5px solid transparent;
@@ -882,7 +882,7 @@ iframe {
 
 
 .found_items .item {
-	min-height: 0px;
+	min-height: 0;
 	padding: 29px 6% 25px;
 	border-bottom: 1px solid #e5e5e5; 
 }
@@ -919,7 +919,7 @@ iframe {
 }
 
 .item_description {
-	font-size: 0px;
+	font-size: 0;
 }
 
 .item_description span {
@@ -938,7 +938,7 @@ iframe {
 }
 
 .rating_stars {
-	font-size: 0px;
+	font-size: 0;
 	margin-left: 10px;
 }
 
@@ -963,7 +963,7 @@ iframe {
 	width: 20px;
 	height: 20px;
 	background: transparent url(../img/sprite/spritesheet.png) no-repeat -9px -998px;
-	left: 0px;
+	left: 0;
 }
 
 .rating_index {
@@ -977,12 +977,13 @@ iframe {
 }
 
 .item_btn {
-	font-size: 0px;
+	font-size: 0;
 }
 
 .item_btn > a {
 	display: inline-block;
 	margin-right: 6px;
+	vertical-align: middle;
 	font-family: "PT Sans", Arial, sans-serif; 
 	text-decoration: none;
 	font-size: 14px;
@@ -1026,7 +1027,7 @@ iframe {
 .main_footer {
 	position: relative;
 	min-height: 50px; 
-	padding: 35px 0px 60px;
+	padding: 35px 0 60px;
 }
 
 .main_footer_index {
@@ -1061,7 +1062,7 @@ iframe {
 	width: 46px;
 	height: 48px;
 	margin-right: 2px;
-	font-size: 0px;
+	font-size: 0;
 	text-decoration: none;
 	vertical-align: top;
 	text-align: center;
